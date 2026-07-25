@@ -9,7 +9,7 @@ module.exports = defineConfig({
     ['html', { open: 'never' }]
   ],
   use: {
-    baseURL: process.env.BASE_URL || 'https://fakestoreapi.com/docs',
+    baseURL: process.env.BASE_URL || 'https://fakestoreapi.com',
     extraHTTPHeaders: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',

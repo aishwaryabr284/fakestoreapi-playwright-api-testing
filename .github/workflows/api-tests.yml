@@ -24,10 +24,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
       - name: Run API tests
         run: npm test
         env:
-          BASE_URL: https://fakestoreapi.com/docs
+          BASE_URL: https://fakestoreapi.com
 
       - name: Upload Playwright report
         if: always()
