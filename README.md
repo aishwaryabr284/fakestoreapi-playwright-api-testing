@@ -2,7 +2,7 @@
 
 ## Overview
 
-A Beginner-friendly Playwright JavaScript API testing framework using POM structure, test data separation, GitHub Actions, and Fake Store API.
+A Beginner-friendly Playwright JavaScript API testing framework using POM structure, test data separation,and Fake Store API.
 
 ## Skills Demonstrated
 
@@ -12,7 +12,6 @@ A Beginner-friendly Playwright JavaScript API testing framework using POM struct
 - REST API validation for `GET`, `POST`, `PUT`, and `DELETE` requests
 - Test data management using separate data files
 - HTTP status code and JSON response validation
-- GitHub Actions CI workflow setup
 - HTML test report generation
 
 ## Tech Stack
@@ -22,7 +21,6 @@ A Beginner-friendly Playwright JavaScript API testing framework using POM struct
 - Node.js
 - npm
 - REST API
-- GitHub Actions
 
 ## API Under Test
 Base URL:
@@ -34,10 +32,7 @@ https://fakestoreapi.com
 ## Project Structure
 
 ```text
-.
-├── .github/
-│   └── workflows/
-│       └── api-tests.yml
+ 
 ├── api/
 │   ├── authApi.js
 │   ├── cartsApi.js
@@ -62,7 +57,6 @@ https://fakestoreapi.com
 | `testData/` | Contains request body and reusable test data |
 | `tests/` | Contains Playwright test spec files |
 | `playwright.config.js` | Contains Playwright configuration and base URL setup |
-| `.github/workflows/api-tests.yml` | Runs tests automatically in GitHub Actions |
 | `package.json` | Contains project scripts and dependencies |
 
 ## What POM Means in This API Project
@@ -113,14 +107,6 @@ To run tests with a different base URL in PowerShell:
 ```powershell
 $env:BASE_URL = "https://fakestoreapi.com"
 npm test```
-
-## GitHub Actions
-
-The workflow file `.github/workflows/api-tests.yml` runs API tests automatically on:
-
-- Push to the `main` branch
-- Pull request to the `main` branch
-- Manual workflow run from GitHub Actions
 
 ## Useful npm Scripts
 
