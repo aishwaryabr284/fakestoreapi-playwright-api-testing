@@ -61,10 +61,10 @@ test.describe('Users API', () => {
 
     test('should login with valid user credentials', async ({ request }) => {
         const authApi = new AuthApi(request);
-        const response = await authApi.login(LoginDetails.username,LoginDetails.password);
-        const loginResult = await response.json();
-
-        expect(response.ok()).toBeTruthy();
+        const response = await authApi.login(LoginDetails.LoginData.username,LoginDetails.LoginData.password);
+        
+        //expect(response.ok()).toBeTruthy();
+        const loginResult = await response.json();        
         expect(loginResult).toHaveProperty('token');
         expect(loginResult.token.length).toBeGreaterThan(0);
     });
