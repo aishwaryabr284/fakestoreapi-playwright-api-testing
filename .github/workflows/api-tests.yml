@@ -26,6 +26,8 @@ jobs:
 
       - name: Run API tests
         run: npm test
+        env:
+          BASE_URL: https://fakestoreapi.com/docs
 
       - name: Upload Playwright report
         if: always()

@@ -9,9 +9,12 @@ module.exports = defineConfig({
     ['html', { open: 'never' }]
   ],
   use: {
-    baseURL: process.env.BASE_URL || 'https://fakestoreapi.com',
+    baseURL: process.env.BASE_URL || 'https://fakestoreapi.com/docs',
     extraHTTPHeaders: {
-      Accept: 'application/json'
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'User-Agent': 'Mozilla/5.0 (compatible; PlaywrightTests/1.0)'
     }
+    
   }
 });
