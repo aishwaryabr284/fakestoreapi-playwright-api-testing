@@ -1,5 +1,5 @@
-const { test, expect, request } = require('@playwright/test');
-const { ProductsApi } = require('../api/productsApi');
+import { test, expect, request } from '@playwright/test';
+import { ProductsApi } from '../api/productsApi';
 import { ProductDetails } from '../testData/ProductData';
 
 test.describe('Products API', () => {

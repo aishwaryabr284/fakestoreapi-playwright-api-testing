@@ -1,6 +1,6 @@
-const { test, expect } = require('@playwright/test');
-const { AuthApi } = require('../api/authApi');
-const { UsersApi } = require('../api/usersApi');
+import { test, expect } from '@playwright/test';
+import { AuthApi } from '../api/authApi';
+import { UsersApi } from '../api/usersApi';
 import { UserDetails } from '../testData/UserData';
 import { LoginDetails } from '../testData/Logindetails';
 

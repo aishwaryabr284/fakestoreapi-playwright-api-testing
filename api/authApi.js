@@ -1,4 +1,4 @@
-class AuthApi {
+exports.AuthApi = class AuthApi {
   constructor(request) {
     this.request = request;
   }
@@ -13,5 +13,3 @@ class AuthApi {
     });
   }
 }
-
-module.exports = { AuthApi };

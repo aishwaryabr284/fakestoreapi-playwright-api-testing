@@ -1,4 +1,4 @@
-class ProductsApi {
+exports.ProductsApi = class ProductsApi {
   constructor(request) {
     this.request = request;
   }
@@ -37,5 +37,3 @@ class ProductsApi {
     return this.request.delete(`/products/${productId}`)
   }
 }
-
-module.exports = { ProductsApi };

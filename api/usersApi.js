@@ -1,4 +1,4 @@
-class UsersApi {
+exports.UsersApi = class UsersApi {
   constructor(request) {
     this.request = request;
   }
@@ -32,5 +32,3 @@ class UsersApi {
     return this.request.delete(`/users/${userID}`);
   }
 }
-
-module.exports = { UsersApi };

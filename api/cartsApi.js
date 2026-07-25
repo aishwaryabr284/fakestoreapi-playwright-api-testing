@@ -1,4 +1,4 @@
-class CartsApi {
+exports.CartsApi = class CartsApi {
   constructor(request) {
     this.request = request;
   }
@@ -33,4 +33,3 @@ class CartsApi {
   }
 }
 
-module.exports = { CartsApi };
